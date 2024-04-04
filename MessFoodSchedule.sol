@@ -38,11 +38,9 @@ contract foodSchedule is Ownable(msg.sender){
 
     function addFoodTypes(uint _index, string memory _name) public onlyOwner{
         foodTypes storage thiRequest = todaysMenu[_index];
-        totalFoodTypesAvailable++;
-        
-        
         thiRequest.name= _name;
-    }
+        totalFoodTypesAvailable++;    
+}
     
     uint public numvoting;
 
