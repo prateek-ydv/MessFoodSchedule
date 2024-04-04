@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.4.25 <0.9.0;
 
-import "./ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
 
-contract foodSchedule is Ownable{
+contract foodSchedule is Ownable(msg.sender){
     
     
 
